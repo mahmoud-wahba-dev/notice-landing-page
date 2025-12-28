@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iconify-json/fluent": "^1.2.36",
+    "@iconify-json/mage": "^1.2.4",
+    "@iconify-json/solar": "^1.2.5",
     "flyonui": "*"
   },
   "devDependencies": {
