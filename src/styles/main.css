@@ -143,8 +143,7 @@ body {
   --text-65px: 4.0625rem;
   /* 65px */
   --text-76px: 4.75rem;
-  /* 76px */;
-
+  /* 76px */
 
   /* Custom border-radius (px → rem) */
   --radius-4px: 0.25rem;
@@ -226,8 +225,8 @@ body {
 }
 
 .bg-header {
-  background: linear-gradient(1.37deg, #fbf3ff 1.25%, #ffffff 98.92%),
-    url("/images/hero_bg.webp");
+  background-image: url("/images/hero_bg.webp"),
+    linear-gradient(1.37deg, #fbf3ff 1.25%, #ffffff 98.92%);
   background-repeat: no-repeat;
   background-position: left;
 }
