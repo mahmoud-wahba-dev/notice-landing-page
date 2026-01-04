@@ -17,32 +17,33 @@
 <body class="min-h-dvh text-black">
 
 
-  <header class=" bg-header
+  <header class=" sm:bg-header
   bg-no-repeat
   bg-left">
     <nav
       class="navbar w-[95%] m-auto  mt-4 rounded-18px shadow-base-300/20 shadow-sm border border-[#DFDFDF] bg-white/82">
-      <div class="w-full md:flex md:items-center md:gap-2">
+      <div class="w-full  flex items-center justify-between gap-2">
         <div class="flex items-center justify-between">
-          <div class="navbar-start items-center justify-between max-md:w-full">
+          <div class="navbar-start items-center justify-between ">
             <a href="#" aria-label="Homepage Link">
               <img src="/images/logo.svg" alt="logo">
 
             </a>
-            <div class="md:hidden">
+            <!-- <div class="md:hidden">
               <button type="button" class="collapse-toggle btn btn-soft btn-sm btn-square"
                 data-collapse="#logo-navbar-collapse" aria-controls="logo-navbar-collapse"
                 aria-label="Toggle navigation">
                 <span class="icon-[tabler--menu-2] collapse-open:hidden size-4"></span>
                 <span class="icon-[tabler--x] collapse-open:block hidden size-4"></span>
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
         <div id="logo-navbar-collapse"
-          class="md:navbar-end collapse hidden grow basis-full overflow-hidden transition-[height] duration-300 max-md:w-full">
+          class="navbar-end collapse  grow basis-full overflow-hidden transition-[height] duration-300 ">
           <ul class="menu md:menu-horizontal gap-2 p-0  max-md:mt-2">
-            <li><a href="#" class=" font-semibold text-20px  text-black hover:bg-inherit hover:text-black">
+            <li><a href="#"
+                class=" font-semibold text-20px  text-black hover:bg-inherit hover:text-black max-sm:btn-primary max-sm:btn btn-sm">
 
                 <span class="icon-[material-symbols--login-rounded]"></span>
                 تسجيل الدخول</a></li>
@@ -53,7 +54,7 @@
     </nav>
     <section class="">
       <div class="flex jz3o6 items-center justify-between v3npj sm:gap-16 lg:gap-24">
-        <div class="dpzny tksmk lg:grid-cols-2 pt-28 pb-12">
+        <div class="dpzny tksmk lg:grid-cols-2 pt-28 pb-12 max-sm:pt-10">
           <!-- Left Content -->
           <div class="relative flex jz3o6 justify-center ps-10">
             <div class="flex jz3o6 justify-center mb-10">
@@ -64,7 +65,7 @@
 
               </div>
               <h1
-                class="font-bold text-52px  text-black mb-7 intersect-once intersect:motion-preset-slide-right-md intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-300 od0jl nnxs7 wyndg jf5qt c4y4n cxzfk leading-[1.15] fl9z1 lfitq t3nee max-md:text-3xl">
+                class="font-bold text-52px  text-black mb-7 intersect-once intersect:motion-preset-slide-right-md intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-300 od0jl nnxs7 wyndg jf5qt c4y4n cxzfk leading-[1.15] fl9z1 lfitq t3nee !max-sm:text-34px">
 
                 <span class="text-primary">عزّز ثقة</span>
                 عملائك بإشعارات التسويق النفسي
@@ -181,20 +182,25 @@
                       قيم مستوى خدماتنا
                     </p>
                     <div class="flex items-center gap-4 mb-4 ">
-                      <div class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
+                      <div
+                        class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
                         5
                       </div>
-                      <div class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
+                      <div
+                        class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
                         4
                       </div>
 
-                      <div class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
+                      <div
+                        class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
                         3
                       </div>
-                      <div class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
+                      <div
+                        class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
                         2
                       </div>
-                      <div class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
+                      <div
+                        class="bg-[#FED1E8] rounded-6px p-1 xl:px-4 xl:py-1.5  font-medium text-12px xl:text-20px text-[#FF4B4B]">
                         1
                       </div>
                     </div>
@@ -312,7 +318,8 @@
 
         </div>
         <!-- Feature Cards Grid -->
-        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-5">
+        <div
+          class="grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-5 max-sm:gap-x-2.5 max-sm:gap-y-5">
           <!-- User-Friendly Interface -->
           <div
             class="card bg-[#FCF4FF] rounded-16px border-f8 hover:border-primary border-primary/30 card-border shadow-none transition-colors duration-300">
@@ -506,43 +513,43 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div class="flex items-center">
             <div>
-              <h3 class="font-semibold text-36px mb-2">معاينة الإشعارات</h3>
-              <p class="font-light text-20px sm:max-w-[80%]">
+              <h3 class="font-semibold text-36px mb-2 max-sm:text-center">معاينة الإشعارات</h3>
+              <p class="font-light text-20px sm:max-w-[80%] max-sm:text-center">
                 اطّلع على أشهر أنواع الإشعارات التي يمكنك استخدامها لزيادة التفاعل وبناء الثقة.
               </p>
             </div>
           </div>
           <div class="bg-[#FBF4FF] flex justify-center border border-d9 px-8 lg:px-28 py-11 rounded-24px">
-            <div class="bg-white  rounded-24px border border-[#E8E8E8] p-2 lg:p-8 shadow-[0px_6px_12.7px_0px_#00000026]
+            <div class="bg-white  rounded-24px border border-[#E8E8E8] max-sm:px-5 max-sm:py-6  p-2 lg:p-8 shadow-[0px_6px_12.7px_0px_#00000026]
 ">
               <p class="font-medium text-20px text-center  mb-8">
                 أخبر أصدقاءك واستفيدوا معًا
               </p>
-            <div class="flex items-center gap-3 mb-4 justify-between ">
-                    <div class="xl:size-9 size-10 p-1.5 bg-[#FF4500] rounded-full center_flex">
-                      <img src="/images/reddit.svg" alt="reddit" class="">
-                    </div>
-                    <div class="xl:size-9 size-10 p-1.5  bg-[#00E510] rounded-full center_flex">
-                      <img src="/images/whatsapp.svg" alt="whatsapp" class="">
-                    </div>
+              <div class="flex items-center gap-3 mb-4 justify-between ">
+                <div class="xl:size-9 size-10 p-1.5 bg-[#FF4500] rounded-full center_flex">
+                  <img src="/images/reddit.svg" alt="reddit" class="">
+                </div>
+                <div class="xl:size-9 size-10 p-1.5  bg-[#00E510] rounded-full center_flex">
+                  <img src="/images/whatsapp.svg" alt="whatsapp" class="">
+                </div>
 
 
-                    <div class="xl:size-9 size-10 p-1.5 bg-[#1C1C1B] rounded-full center_flex">
-                      <img src="/images/twitter.svg" alt="twitter" class="">
-                    </div>
-                    <div class="xl:size-9 size-10 p-1.5 bg-[#00B0F2] rounded-full center_flex">
-                      <img src="/images/telegram.svg" alt="telegram" class="">
-                    </div>
+                <div class="xl:size-9 size-10 p-1.5 bg-[#1C1C1B] rounded-full center_flex">
+                  <img src="/images/twitter.svg" alt="twitter" class="">
+                </div>
+                <div class="xl:size-9 size-10 p-1.5 bg-[#00B0F2] rounded-full center_flex">
+                  <img src="/images/telegram.svg" alt="telegram" class="">
+                </div>
 
-                    <div class="xl:size-9 size-10 p-1.5 bg-[linear-gradient(45deg,#FAAD4F_14.61%,#DD2A7B_39.38%,#9537B0_58.49%,#515BD4_85.39%)]
+                <div class="xl:size-9 size-10 p-1.5 bg-[linear-gradient(45deg,#FAAD4F_14.61%,#DD2A7B_39.38%,#9537B0_58.49%,#515BD4_85.39%)]
  rounded-full center_flex">
-                      <img src="/images/instagram.svg" alt="instagram" class="">
-                    </div>
+                  <img src="/images/instagram.svg" alt="instagram" class="">
+                </div>
 
-                    <div class="xl:size-9  size-10 bg-[#1877F2] rounded-full center_flex p-3">
-                      <img src="/images/fb.svg" alt="facebook" class="">
-                    </div>
-                  </div>
+                <div class="xl:size-9  size-10 bg-[#1877F2] rounded-full center_flex p-3">
+                  <img src="/images/fb.svg" alt="facebook" class="">
+                </div>
+              </div>
               <p class="font-normal text-17px text-[#5D5D5D] text-center">
                 ساعد أصدقاءك على تحسين متاجرهم — أخبرهم الآن.
               </p>
@@ -554,18 +561,20 @@
     </section>
     <section class="py-8 sm:py-24">
       <div class="container">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-11">
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-11 max-sm:gap-x-4 max-sm:gap-y-6">
           <!-- جامع البريد الالكتروني -->
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
                 <span class="icon-[hugeicons--mail-open-01] size-8 text-[#9C03E4]"></span>
               </div>
-              <div class="max-lg:flex-3 
+              <div class="max-lg:flex-3 max-sm:flex-1
 ">
-                <h6 class="font-semibold text-20px mb-4">جامع البريد الالكتروني</h6>
-                <p class="font-normal text-14px text-7e">اجمع عناوين البريد الإلكتروني وحوّل الزوار إلى عملاء محتملين.
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">جامع البريد الالكتروني</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">اجمع عناوين البريد الإلكتروني وحوّل الزوار إلى
+                  عملاء محتملين.
                 </p>
               </div>
             </div>
@@ -575,12 +584,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417]
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[hugeicons--megaphone-02] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">إشعارات التحويلات</h6>
-                <p class="font-normal text-14px text-7e">اعرض آخر عمليات الشراء أو التسجيل لتعزيز الإثبات الاجتماعي.</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">إشعارات التحويلات</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">اعرض آخر عمليات الشراء أو التسجيل لتعزيز
+                  الإثبات الاجتماعي.</p>
               </div>
             </div>
           </div>
@@ -589,12 +601,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[hugeicons--coupon-percent] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">كوبون خصم</h6>
-                <p class="font-normal text-14px text-7e">أخبر عملاءك بالعروض والخصومات الحالية بطريقة جذابة.</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">كوبون خصم</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">أخبر عملاءك بالعروض والخصومات الحالية بطريقة
+                  جذابة.</p>
               </div>
             </div>
           </div>
@@ -603,12 +618,14 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[material-symbols--hourglass] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">العداد التنازلي (الزوار)</h6>
-                <p class="font-normal text-14px text-7e">إظهار عدّ تنازلي للزوار على منتجاتك بشكل مغرٍ
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">العداد التنازلي (الزوار)</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">إظهار عدّ تنازلي للزوار على منتجاتك بشكل مغرٍ
                 </p>
               </div>
             </div>
@@ -618,12 +635,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16   max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[mynaui--play-square] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">فيديو</h6>
-                <p class="font-normal text-14px text-7e">إظهار فيديو لمنتجك أو خدماتك لزيادة المصداقية.</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">فيديو</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">إظهار فيديو لمنتجك أو خدماتك لزيادة المصداقية.
+                </p>
               </div>
             </div>
           </div>
@@ -632,12 +652,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[hugeicons--school-bell-02] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">تنبيهات السعر</h6>
-                <p class="font-normal text-14px text-7e">عرض طريقة تفاعلية لتنبيه المستخدم بانخفاض سعر المنتج .</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">تنبيهات السعر</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">عرض طريقة تفاعلية لتنبيه المستخدم بانخفاض سعر
+                  المنتج .</p>
               </div>
             </div>
           </div>
@@ -646,12 +669,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[material-symbols--star-outline-rounded] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">مراجعات وتقييمات العملاء</h6>
-                <p class="font-normal text-14px text-7e">إظهار تقييمات العملاء بشكل مباشر لزيادة الثقة في المنتج .</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">مراجعات وتقييمات العملاء</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">إظهار تقييمات العملاء بشكل مباشر لزيادة الثقة
+                  في المنتج .</p>
               </div>
             </div>
           </div>
@@ -660,12 +686,14 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[hugeicons--clipboard] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">جامع الطلبات</h6>
-                <p class="font-normal text-14px text-7e">جمع الطلبات وحفظ بيانات العملاء بسهولة</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">جامع الطلبات</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">جمع الطلبات وحفظ بيانات العملاء بسهولة</p>
               </div>
             </div>
           </div>
@@ -674,12 +702,14 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[hugeicons--image-add-01] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">صورة إشعار</h6>
-                <p class="font-normal text-14px text-7e">إظهار صورة مع الإشعار لجذب الانتباه .</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">صورة إشعار</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">إظهار صورة مع الإشعار لجذب الانتباه .</p>
               </div>
             </div>
           </div>
@@ -688,12 +718,14 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[hugeicons--image-add-01] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">منتج جديد</h6>
-                <p class="font-normal text-14px text-7e">إشعار بوصول منتج جديد ..</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">منتج جديد</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">إشعار بوصول منتج جديد ..</p>
               </div>
             </div>
           </div>
@@ -702,12 +734,14 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[hugeicons--image-add-01] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">عداد التحويلات</h6>
-                <p class="font-normal text-14px text-7e">عرض عدد التحويلات التي تمت على منتج معين .</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">عداد التحويلات</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">عرض عدد التحويلات التي تمت على منتج معين .</p>
               </div>
             </div>
           </div>
@@ -716,12 +750,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[mdi--user-multiple-outline] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">عدد الزوار المتاحين</h6>
-                <p class="font-normal text-14px text-7e">عرض عدد الزوار المتواجدين حاليًا في المتجر .</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">عدد الزوار المتاحين</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">عرض عدد الزوار المتواجدين حاليًا في المتجر .
+                </p>
               </div>
             </div>
           </div>
@@ -730,12 +767,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[mdi--user-multiple-outline] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">طلب خاص</h6>
-                <p class="font-normal text-14px text-7e">دع العميل يكتب طلبه الخاص ويتم إرساله إليك مباشرة</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">طلب خاص</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">دع العميل يكتب طلبه الخاص ويتم إرساله إليك
+                  مباشرة</p>
               </div>
             </div>
           </div>
@@ -744,12 +784,15 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[mdi--user-multiple-outline] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">تقييم بالدرجات</h6>
-                <p class="font-normal text-14px text-7e">السماح للمستخدمين بإعطاء تقييمات عددية بشكل درجات</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">تقييم بالدرجات</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">السماح للمستخدمين بإعطاء تقييمات عددية بشكل
+                  درجات</p>
               </div>
             </div>
           </div>
@@ -758,12 +801,14 @@
           <div class="px-4 py-5 border border-[#C4C4C46E] rounded-16px shadow-[0px_4px_4px_0px_#9C03E417] hover:border-primary duration-200 hover:border-2
 ">
             <div class="flex items-center gap-3">
-              <div class="size-16 max-lg:flex-2 center_flex bg-[#FAF0FF] rounded-9px">
+              <div
+                class="size-16 max-lg:flex-2 max-sm:flex-none center_flex bg-[#FAF0FF] rounded-9px max-sm:size-11 max-sm:p-2">
+
                 <span class="icon-[lucide--headset] size-8 text-[#9C03E4]"></span>
               </div>
               <div class="max-lg:flex-3">
-                <h6 class="font-semibold text-20px mb-4">طلب الاستشارة</h6>
-                <p class="font-normal text-14px text-7e">نموذج بسيط لطلب استشارة من الزائر .</p>
+                <h6 class="font-semibold text-20px mb-4 max-sm:text-12px">طلب الاستشارة</h6>
+                <p class="font-normal text-14px text-7e max-sm:text-9px">نموذج بسيط لطلب استشارة من الزائر .</p>
               </div>
             </div>
           </div>
@@ -772,8 +817,9 @@
     </section>
     <section class="py-8 sm:py-24">
       <div class="container">
-        <h3 class="text-center font-semibold text-36px mb-1">حوّل زوار موقعك إلى عملاء حقيقيين</h3>
-        <p class="font-light text-20px mb-16 text-center">استخدم الإشعارات الذكية لتعزيز الثقة، تحفيز القرار، وزيادة
+        <h3 class="text-center font-semibold text-36px mb-1 max-sm:px-8">حوّل زوار موقعك إلى عملاء حقيقيين</h3>
+        <p class="font-light text-20px mb-16 text-center max-sm:px-8">استخدم الإشعارات الذكية لتعزيز الثقة، تحفيز
+          القرار، وزيادة
           المبيعات في اللحظة المناسبة.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <div>
@@ -800,12 +846,12 @@
       <div class="container">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
 
-          <div>
+          <div class="order-2 sm:order-1">
             <img src="/images/decision_sec.webp" alt="decision"
               class="w-full h-auto rounded-14px shadow-[0px_4px_4px_0px_#0000001A]">
 
           </div>
-          <div class="ps-24">
+          <div class="order-1 sm:order-2 sm:ps-24">
             <h4 class="font-semibold text-36px mb-2">توجيه القرار في اللحظة المناسبة</h4>
             <p class="font-normal  text-20px mb-8 sm:max-w-[80%] ">
               استخدم التوقيت الذكي لإيصال الرسالة الصحيحة عندما يكون المستخدم مستعدًا للتفاعل.</p>
@@ -821,21 +867,27 @@
     </section>
     <section class="py-8 sm:py-24 bg-[#FBF4FF] rounded-16px">
       <div class="container">
-        <h5 class="font-semibold text-36px text-center mb-16">أرقام حقيقية… ونتائج يلاحظها التجار</h5>
+        <h5 class="font-semibold text-36px text-center mb-16 max-sm:text-24px">أرقام حقيقية… ونتائج يلاحظها التجار</h5>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="relative max-sm:text-center">
+          <div class="relative max-sm:text-center max-sm:mb-16">
             <p class="font-semibold text-76px text-primary mb-1.5 ps-6 max-sm:text-center">30+</p>
             <p class="font-medium text-20px ps-6 text-black">أداة وإشعار تسويقي</p>
           </div>
 
-          <div class="relative overflow-hidden text-center px-6 py-4"
-            style="background-image: linear-gradient(180deg,#9C03E4 0%, rgba(156,3,228,0) 100%), linear-gradient(180deg,#9C03E4 0%, rgba(156,3,228,0) 100%); background-position: left top, right top; background-size: 1px 100%; background-repeat: no-repeat;">
+          <div class="relative overflow-hidden text-center px-6 py-4 max-sm:my-16 max-sm:tb-gradient-border" style="
+    background-image:
+      linear-gradient(180deg,#9C03E4 0%, rgba(156,3,228,0) 100%),
+      linear-gradient(180deg,#9C03E4 0%, rgba(156,3,228,0) 100%);
+    background-position: left top, right top;
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+  ">
             <p class="font-semibold text-76px text-primary mb-1.5">250M+</p>
             <p class="font-medium text-20px text-black">مشاهدة لاشعارت تجارنا</p>
           </div>
 
 
-          <div class="text-end max-sm:text-center">
+          <div class="text-end max-sm:text-center max-sm:mt-16">
             <p class="font-semibold text-76px text-primary mb-1.5 pe-6 ">98%</p>
             <p class="font-medium text-20px pe-6 text-black">نسبة نجاح الظهور</p>
           </div>
@@ -878,7 +930,7 @@
 
                 <li class="font-medium text-24px mb-3 flex items-center gap-3">
                   <span class="icon-[teenyicons--tick-circle-solid] size-6 text-white"></span>
-                 دعم فني واتساب وإيميل  
+                  دعم فني واتساب وإيميل
                 </li>
               </ul>
               <button
@@ -1040,11 +1092,11 @@
             <div class="accordion w-full space-y-4">
               <div class="accordion-item" id="faq-1">
                 <button
-                  class="accordion-toggle text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
+                  class="accordion-toggle max-sm:text-base text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
                   aria-controls="faq-1-collapse" aria-expanded="false">
                   <span class="flex-1">1- ما الذي يجعل نوتس مختلفًا؟</span>
                   <span
-                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden">
+                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden max-sm:size-6">
                     <span class="icon-[tabler--plus] size-5"></span>
                   </span>
                   <span
@@ -1064,11 +1116,11 @@
 
               <div class="accordion-item" id="faq-2">
                 <button
-                  class="accordion-toggle text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
+                  class="accordion-toggle max-sm:text-base text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
                   aria-controls="faq-2-collapse" aria-expanded="false">
                   <span class="flex-1">2- هل تطبيق نوتس مناسب للمبتدئين؟</span>
                   <span
-                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden">
+                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden max-sm:size-6">
                     <span class="icon-[tabler--plus] size-5"></span>
                   </span>
                   <span
@@ -1087,11 +1139,11 @@
 
               <div class="accordion-item" id="faq-3">
                 <button
-                  class="accordion-toggle text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
+                  class="accordion-toggle max-sm:text-base text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
                   aria-controls="faq-3-collapse" aria-expanded="false">
                   <span class="flex-1">3- كم يستغرق تفعيل الإشعارات على موقعي؟</span>
                   <span
-                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden">
+                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden max-sm:size-6">
                     <span class="icon-[tabler--plus] size-5"></span>
                   </span>
                   <span
@@ -1110,11 +1162,11 @@
 
               <div class="accordion-item" id="faq-4">
                 <button
-                  class="accordion-toggle text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
+                  class="accordion-toggle max-sm:text-base text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
                   aria-controls="faq-4-collapse" aria-expanded="false">
                   <span class="flex-1">4- هل تؤثر الإشعارات على سرعة الموقع؟</span>
                   <span
-                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden">
+                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden max-sm:size-6">
                     <span class="icon-[tabler--plus] size-5"></span>
                   </span>
                   <span
@@ -1133,11 +1185,11 @@
 
               <div class="accordion-item" id="faq-5">
                 <button
-                  class="accordion-toggle text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
+                  class="accordion-toggle max-sm:text-base text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
                   aria-controls="faq-5-collapse" aria-expanded="false">
                   <span class="flex-1">5- هل نوتس مناسبة للمتاجر الصغيرة والكبيرة؟</span>
                   <span
-                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden">
+                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden max-sm:size-6">
                     <span class="icon-[tabler--plus] size-5"></span>
                   </span>
                   <span
@@ -1156,11 +1208,11 @@
 
               <div class="accordion-item" id="faq-6">
                 <button
-                  class="accordion-toggle text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
+                  class="accordion-toggle max-sm:text-base text-black font-medium text-24px flex w-full items-center justify-between gap-4 rounded-12px bg-[#FBF4FF] px-5 sm:px-7 py-5 text-start"
                   aria-controls="faq-6-collapse" aria-expanded="false">
                   <span class="flex-1">6- هل أستطيع إلغاء الاشتراك متى ما أردت؟</span>
                   <span
-                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden">
+                    class="flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white accordion-item-active:hidden max-sm:size-6">
                     <span class="icon-[tabler--plus] size-5"></span>
                   </span>
                   <span
@@ -1183,7 +1235,7 @@
     </section>
     <section class="py-8 sm:py-24 bg-gradient-to-b from-[#9C03E4] to-[#56027E]">
       <div class="container">
-        <div class="text-center text-white">
+        <div class="text-center text-white max-sm:pb-16">
           <h5 class="font-bold text-48px mb-6 ">ابدأ الآن وفعّل إشعاراتك خلال دقائق</h5>
           <p class="font-black text-24px mb-11">لا تفوّت فرصة تحويل زوارك إلى عملاء — الإعداد سهل والنتائج سريعة.</p>
           <button

@@ -124,6 +124,12 @@ body {
   /* 30px */
   --text-32px: 2rem;
   /* 32px */
+  --text-33px: 2rem;
+  /* 33px */
+  --text-34px: 2.125rem;
+  /* 34px */
+  --text-35px: 2.1875rem;
+  /* 35px */
   --text-36px: 2.25rem;
   /* 36px */
   --text-40px: 2.5rem;
@@ -216,7 +222,7 @@ body {
 ======================== */
 @layer utilities {
   .container {
-    @apply w-full mx-auto max-w-full px-10;
+    @apply w-full mx-auto max-w-full sm:px-10 px-3.5;
   }
 
   .center_flex {
@@ -229,4 +235,30 @@ body {
     linear-gradient(1.37deg, #fbf3ff 1.25%, #ffffff 98.92%);
   background-repeat: no-repeat;
   background-position: left;
+
+}
+
+
+@media (max-width: 640px) {
+  .tb-gradient-border::before,
+  .tb-gradient-border::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      #9C03E4 0%,
+      rgba(207, 205, 205, 0) 100%
+    );
+  }
+
+  .tb-gradient-border::before {
+    top: 0;
+  }
+
+  .tb-gradient-border::after {
+    bottom: 0;
+  }
 }
