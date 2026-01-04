@@ -17,16 +17,15 @@
 <body class="min-h-dvh text-black">
 
 
-  <header class=" sm:bg-header
-  bg-no-repeat
-  bg-left">
+  <header class="bg-header bg-no-repeat bg-left max-lg:!bg-none">
     <nav
       class="navbar w-[95%] m-auto  mt-4 rounded-18px shadow-base-300/20 shadow-sm border border-[#DFDFDF] bg-white/82">
       <div class="w-full  flex items-center justify-between gap-2">
-        <div class="flex items-center justify-between">
-          <div class="navbar-start items-center justify-between ">
+        <div class="flex items-center justify-between min-w-[150px] w-full">
+          <div class="navbar-start items-center justify-between w-full ">
             <a href="#" aria-label="Homepage Link">
-              <img src="/images/logo.svg" alt="logo">
+              <img src="/images/logo.svg" class="sm:block hidden" alt="notice-logo">
+                <img src="/images/logo_mob.svg" class="sm:hidden block w-[132px]" alt="notice-logo" />
 
             </a>
             <!-- <div class="md:hidden">
@@ -41,9 +40,9 @@
         </div>
         <div id="logo-navbar-collapse"
           class="navbar-end collapse  grow basis-full overflow-hidden transition-[height] duration-300 ">
-          <ul class="menu md:menu-horizontal gap-2 p-0  max-md:mt-2">
+          <ul class="menu md:menu-horizontal gap-2 p-0  ">
             <li><a href="#"
-                class=" font-semibold text-20px  text-black hover:bg-inherit hover:text-black max-sm:btn-primary max-sm:btn btn-sm">
+                class=" font-semibold text-20px !h-13  text-black hover:bg-inherit hover:text-black max-sm:btn-primary max-sm:btn btn-sm">
 
                 <span class="icon-[material-symbols--login-rounded]"></span>
                 تسجيل الدخول</a></li>
@@ -54,9 +53,9 @@
     </nav>
     <section class="">
       <div class="flex jz3o6 items-center justify-between v3npj sm:gap-16 lg:gap-24">
-        <div class="dpzny tksmk lg:grid-cols-2 pt-28 pb-12 max-sm:pt-10">
+        <div class="dpzny tksmk lg:grid-cols-2 pt-28 pb-9 max-sm:pt-10">
           <!-- Left Content -->
-          <div class="relative flex jz3o6 justify-center ps-10">
+          <div class="relative flex jz3o6  ps-10 max-sm:px-6">
             <div class="flex jz3o6 justify-center mb-10">
               <div
                 class="bg-[#FBF3FF] rounded-28px w-fit px-2.5 py-1.5 pe-8 font-normal text-14px text-primary intersect-once intersect:motion-preset-slide-right-md intersect:motion-opacity-in-0 flex  items-center ">
@@ -109,11 +108,23 @@
             </div>
           </div>
           <!-- Right Content -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-7 pe-4 h-fit group">
+          <div
+            class="grid grid-cols-2  gap-x-5 gap-y-6 pe-4 h-fit group max-sm:px-6 max-sm:py-7 max-sm:bg-[linear-gradient(90deg,#AE02FE_0%,#680198_100%)]">
+            <div class="">
+              <img src="/public/images/hero/1.webp" alt="hero image" class="mb-6">
+              <img src="/public/images/hero/2.webp" alt="hero image" class="mb-6">
+              <img src="/public/images/hero/3.webp" alt="hero image" class="">
+            </div>
+            <div>
+              <img src="/public/images/hero/4.webp" alt="hero image" class="mb-6">
+              <img src="/public/images/hero/5.webp" alt="hero image" class="mb-3">
+              <img src="/public/images/hero/6.webp" alt="hero image" class="mb-6">
+              <img src="/public/images/hero/7.webp" alt="hero image" class="mb-6">
+            </div>
 
-
+            <!-- 
             <div
-              class="h-fit intersect-once intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
+              class="h-fit max-sm:hidden intersect-once intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
               <div class="bg-white rounded-16px px-3 py-3 pe-14 flex items-center gap-3 shadow-[0px_4px_4px_0px_#B1B0B040]
 ">
                 <div class="size-16 center_flex bg-[#FFE5E5] rounded-full ">
@@ -129,7 +140,7 @@
             </div>
 
             <div
-              class="h-fit intersect-once intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
+              class="h-fit max-sm:hidden intersect-once intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
               <div class="bg-white rounded-16px px-3 py-3 pe-14 flex items-center gap-3 shadow-[0px_4px_4px_0px_#B1B0B040]
 ">
                 <span class="icon-[mdi--tick-decagram] size-14 text-[#6395F6]"></span>
@@ -144,7 +155,7 @@
             </div>
 
             <div
-              class="intersect-once flex-col h-fit intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
+              class="intersect-once max-sm:hidden flex-col h-fit intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
               <div class="bg-white rounded-16px px-3 py-3 pe-6 flex items-center gap-3 shadow-[0px_4px_4px_0px_#B1B0B040]
 ">
                 <div>
@@ -171,7 +182,7 @@
             </div>
 
 
-            <div>
+            <div class="max-sm:hidden">
 
               <div
                 class="mb-2.5 intersect-once flex-col h-fit intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
@@ -233,7 +244,7 @@
             </div>
 
             <div
-              class="mb-2.5 intersect-once flex-col h-fit intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
+              class="mb-2.5 max-sm:hidden intersect-once flex-col h-fit intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
               <div class="bg-white rounded-16px px-7  py-3  flex items-center justify-center gap-3 shadow-[0px_4px_4px_0px_#B1B0B040]
 ">
                 <div>
@@ -275,7 +286,7 @@
 
 
             <div
-              class="h-fit intersect-once intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
+              class="h-fit max-sm:hidden intersect-once intersect:motion-translate-x-in-100 intersect:motion-duration-800 intersect:motion-opacity-in-0 intersect:motion-delay-800 relative ">
               <div class="bg-white h-full rounded-16px px-3 py-3 justify-between flex items-center gap-3 shadow-[0px_4px_4px_0px_#B1B0B040]
 ">
                 <div class="w-[30%] h-[145px]  rounded-6px    ">
@@ -294,7 +305,11 @@
                     الخصم</button>
                 </div>
               </div>
-            </div>
+            </div> -->
+            <!-- -----------mobile---- -->
+            <!-- <div class="">
+              <img src="/public/images/hero/1.webp" alt="hero image" class="">
+            </div> -->
 
           </div>
 
@@ -874,7 +889,7 @@
             <p class="font-medium text-20px ps-6 text-black">أداة وإشعار تسويقي</p>
           </div>
 
-          <div class="relative overflow-hidden text-center px-6 py-4 max-sm:my-16 max-sm:tb-gradient-border" style="
+          <div class="relative overflow-hidden text-center px-6 py-4 max-sm:py-16 tb-mobile-border-y" style="
     background-image:
       linear-gradient(180deg,#9C03E4 0%, rgba(156,3,228,0) 100%),
       linear-gradient(180deg,#9C03E4 0%, rgba(156,3,228,0) 100%);

@@ -238,6 +238,13 @@ body {
 
 }
 
+.tb-border-image-y {
+  border-style: solid;
+  border-width: 2px 0;
+  border-image-source: linear-gradient(90deg, #9C03E4 0%, rgba(207, 205, 205, 0) 100%);
+  border-image-slice: 1;
+}
+
 
 @media (max-width: 640px) {
   .tb-gradient-border::before,
@@ -260,5 +267,19 @@ body {
 
   .tb-gradient-border::after {
     bottom: 0;
+  }
+
+  .tb-border-image {
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, #9C03E4 0%, rgba(207, 205, 205, 0) 100%);
+    border-image-slice: 1;
+  }
+
+  .tb-mobile-border-y {
+    border-style: solid;
+    border-width: 2px 0;
+    border-image-source: linear-gradient(90deg, #9C03E4 0%, rgba(207, 205, 205, 0) 100%);
+    border-image-slice: 1;
+    background: none !important;
   }
 }
