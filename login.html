@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light" class="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تسجيل الدخول - Notice</title>
+  <link rel="icon" type="image/x-icon" href="/public/images/favicon/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-dvh text-black bg-f8">
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar w-[95%] m-auto mt-4 rounded-18px shadow-base-300/20 shadow-sm border border-[#DFDFDF] bg-white/82">
+      <div class="w-full flex items-center justify-between gap-2">
+        <div class="flex items-center justify-between min-w-[150px] w-full">
+          <div class="navbar-start items-center justify-between w-full">
+            <a href="index.html" aria-label="Homepage Link">
+              <img src="/images/logo.svg" class="sm:block hidden" alt="notice-logo">
+              <img src="/images/logo_mob.svg" class="sm:hidden block w-[132px]" alt="notice-logo" />
+            </a>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <ul class="menu md:menu-horizontal gap-2 p-0">
+            <li>
+              <a href="register.html" class="font-semibold text-16px text-black hover:text-primary transition-colors">
+                حساب جديد
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container py-16 max-sm:py-8">
+    <div class="max-w-[480px] mx-auto">
+      
+      <!-- Login Card -->
+      <div class="bg-white rounded-24px shadow-lg border border-dd p-10 max-sm:p-6">
+        
+        <!-- Header -->
+        <div class="text-center mb-8">
+          <div class="w-20 h-20 rounded-full bg-primary/10 center_flex mx-auto mb-5">
+            <span class="icon-[material-symbols--login-rounded] text-primary" style="width: 2.5rem; height: 2.5rem;"></span>
+          </div>
+          <h1 class="font-bold text-36px max-sm:text-28px text-black mb-3">تسجيل الدخول</h1>
+          <p class="font-normal text-16px text-69">مرحباً بعودتك! سجل دخولك للمتابعة</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="space-y-5">
+          
+          <!-- Email Input -->
+          <div>
+            <label for="email" class="block mb-2.5">
+              <span class="font-semibold text-15px text-black">البريد الإلكتروني</span>
+            </label>
+            <div class="relative">
+              <span class="absolute right-4 top-1/2 -translate-y-1/2 text-69 pointer-events-none z-10">
+                <span class="icon-[material-symbols--mail-outline] size-5"></span>
+              </span>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="أدخل بريدك الإلكتروني"
+                class="input input-bordered w-full h-14 text-16px rounded-14px pr-12 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+                required 
+              />
+            </div>
+            <span class="text-error text-14px mt-1.5 hidden flex items-center gap-1" id="emailError">
+              <span class="icon-[heroicons--exclamation-circle] size-4"></span>
+              البريد الإلكتروني غير صحيح
+            </span>
+          </div>
+
+          <!-- Password Input -->
+          <div>
+            <label for="password" class="block mb-2.5">
+              <span class="font-semibold text-15px text-black">كلمة المرور</span>
+            </label>
+            <div class="relative">
+              <span class="absolute right-4 top-1/2 -translate-y-1/2 text-69 pointer-events-none z-10">
+                <span class="icon-[material-symbols--lock-outline] size-5"></span>
+              </span>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="أدخل كلمة المرور"
+                class="input input-bordered w-full h-14 text-16px rounded-14px pr-12 pl-12 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+                required 
+              />
+              <button type="button" id="togglePassword" class="absolute left-4 top-1/2 -translate-y-1/2 text-69 hover:text-primary transition-colors z-10">
+                <span class="icon-[heroicons--eye] size-5"></span>
+              </button>
+            </div>
+            <span class="text-error text-14px mt-1.5 hidden flex items-center gap-1" id="passwordError">
+              <span class="icon-[heroicons--exclamation-circle] size-4"></span>
+              كلمة المرور مطلوبة
+            </span>
+          </div>
+
+          <!-- Remember Me & Forgot Password -->
+          <div class="flex items-center justify-between">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" id="remember" name="remember" class="checkbox checkbox-primary checkbox-sm rounded-6px" />
+              <span class="font-medium text-14px text-black">تذكرني</span>
+            </label>
+            <a href="forgot-password.html" class="font-semibold text-14px text-primary hover:text-secondary transition-colors">
+              نسيت كلمة المرور؟
+            </a>
+          </div>
+
+          <!-- Submit Button -->
+          <button 
+            type="submit" 
+            id="submitBtn"
+            class="btn btn-primary w-full h-14 rounded-14px font-bold text-18px text-white shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
+          >
+            <span class="icon-[material-symbols--login-rounded] size-6"></span>
+            تسجيل الدخول
+          </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="relative my-8">
+          <div class="absolute inset-0 flex items-center">
+            <div class="w-full border-t border-d9"></div>
+          </div>
+          <div class="relative flex justify-center text-14px">
+            <span class="bg-white px-4 text-69 font-medium">أو سجل الدخول باستخدام</span>
+          </div>
+        </div>
+
+        <!-- Social Login -->
+        <div class="grid grid-cols-2 gap-3">
+          <button type="button" class="btn btn-outline border-dd hover:border-primary hover:bg-primary/5 h-12 rounded-12px font-medium text-15px">
+            <img src="https://api.iconify.design/logos:google-icon.svg" alt="Google" class="w-5 h-5" />
+            Google
+          </button>
+          <button type="button" class="btn btn-outline border-dd hover:border-[#1877F2] hover:bg-[#1877F2]/5 h-12 rounded-12px font-medium text-15px">
+            <img src="https://api.iconify.design/logos:facebook.svg" alt="Facebook" class="w-5 h-5" />
+            Facebook
+          </button>
+        </div>
+
+        <!-- Register Link -->
+        <div class="text-center mt-8 pt-6 border-t border-d9">
+          <p class="font-normal text-15px text-69">
+            ليس لديك حساب؟
+            <a href="register.html" class="font-bold text-primary hover:text-secondary transition-colors">
+              إنشاء حساب جديد
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Back to Home -->
+      <div class="text-center mt-6">
+        <a href="index.html" class="inline-flex items-center gap-2 font-medium text-15px text-69 hover:text-primary transition-colors group">
+          <span class="icon-[heroicons--arrow-right] size-5 group-hover:translate-x-1 transition-transform"></span>
+          العودة للصفحة الرئيسية
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-8 mt-12">
+    <div class="container">
+      <div class="flex items-center justify-center gap-8 max-sm:flex-col mb-4">
+        <a href="index.html" class="font-medium text-14px text-69 hover:text-primary transition-colors">الرئيسية</a>
+        <a href="index.html#features" class="font-medium text-14px text-69 hover:text-primary transition-colors">المميزات</a>
+        <a href="index.html#pricing" class="font-medium text-14px text-69 hover:text-primary transition-colors">الأسعار</a>
+        <a href="#" class="font-medium text-14px text-69 hover:text-primary transition-colors">تواصل معنا</a>
+      </div>
+      <div class="text-center">
+        <p class="text-69 text-14px">&copy; 2026 Notice. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('loginForm');
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+      const emailError = document.getElementById('emailError');
+      const passwordError = document.getElementById('passwordError');
+      const togglePassword = document.getElementById('togglePassword');
+      const submitBtn = document.getElementById('submitBtn');
+      
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      // Toggle password visibility
+      togglePassword.addEventListener('click', function() {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        this.innerHTML = type === 'password' 
+          ? '<span class="icon-[heroicons--eye] size-5"></span>'
+          : '<span class="icon-[heroicons--eye-slash] size-5"></span>';
+      });
+
+      // Email validation
+      emailInput.addEventListener('blur', function() {
+        if (!emailRegex.test(emailInput.value)) {
+          emailInput.classList.add('input-error');
+          emailError.classList.remove('hidden');
+        } else {
+          emailInput.classList.remove('input-error');
+          emailError.classList.add('hidden');
+        }
+      });
+
+      // Password validation
+      passwordInput.addEventListener('blur', function() {
+        if (passwordInput.value.length < 6) {
+          passwordInput.classList.add('input-error');
+          passwordError.classList.remove('hidden');
+          passwordError.innerHTML = '<span class="icon-[heroicons--exclamation-circle] size-4"></span> كلمة المرور يجب أن تكون 6 أحرف على الأقل';
+        } else {
+          passwordInput.classList.remove('input-error');
+          passwordError.classList.add('hidden');
+        }
+      });
+
+      // Form submission
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let isValid = true;
+
+        // Validate email
+        if (!emailRegex.test(emailInput.value)) {
+          emailInput.classList.add('input-error');
+          emailError.classList.remove('hidden');
+          isValid = false;
+        }
+
+        // Validate password
+        if (passwordInput.value.length < 6) {
+          passwordInput.classList.add('input-error');
+          passwordError.classList.remove('hidden');
+          passwordError.innerHTML = '<span class="icon-[heroicons--exclamation-circle] size-4"></span> كلمة المرور يجب أن تكون 6 أحرف على الأقل';
+          isValid = false;
+        }
+
+        if (isValid) {
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="loading loading-spinner loading-md"></span> جاري تسجيل الدخول...';
+          
+          // Simulate API call
+          setTimeout(() => {
+            // Redirect to dashboard or show success
+            window.location.href = 'index.html';
+          }, 1500);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

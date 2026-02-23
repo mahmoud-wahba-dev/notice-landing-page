@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light" class="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 - الصفحة غير موجودة - Notice</title>
+  <link rel="icon" type="image/x-icon" href="/public/images/favicon/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-dvh text-black">
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar w-[95%] m-auto mt-4 rounded-18px shadow-base-300/20 shadow-sm border border-[#DFDFDF] bg-white/82">
+      <div class="w-full flex items-center justify-between gap-2">
+        <div class="flex items-center justify-between min-w-[150px] w-full">
+          <div class="navbar-start items-center justify-between w-full">
+            <a href="index.html" aria-label="Homepage Link">
+              <img src="/images/logo.svg" class="sm:block hidden" alt="notice-logo">
+              <img src="/images/logo_mob.svg" class="sm:hidden block w-[132px]" alt="notice-logo" />
+            </a>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <ul class="menu md:menu-horizontal gap-2 p-0">
+            <li>
+              <a href="login.html" class="font-semibold text-20px !h-13 text-black hover:bg-inherit hover:text-black max-sm:btn-primary max-sm:btn btn-sm">
+                <span class="icon-[material-symbols--login-rounded]"></span>
+                تسجيل الدخول
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main 404 Content -->
+  <main class="grid min-h-[calc(100vh-120px)] grid-cols-1 lg:grid-cols-2">
+    
+    <!-- Right Section: Text Content (RTL) -->
+    <div class="px-4 py-8 flex flex-col items-center justify-center text-center order-2 lg:order-1">
+      <h2 class="text-primary mb-6 text-60px max-sm:text-48px font-bold">عذراً!</h2>
+      <h3 class="text-black mb-4 text-36px max-sm:text-28px font-semibold">حدث خطأ ما</h3>
+      <p class="text-69 mb-8 max-w-md text-18px max-sm:text-16px leading-relaxed">
+        الصفحة التي تبحث عنها غير موجودة. نقترح عليك العودة إلى الصفحة الرئيسية
+      </p>
+      <a href="index.html" class="btn btn-primary h-14 px-8 rounded-14px font-bold text-18px text-white shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all">
+        <span class="icon-[heroicons--home] size-6"></span>
+        العودة للصفحة الرئيسية
+      </a>
+      
+      <!-- Additional Links -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-6">
+        <a href="login.html" class="font-medium text-15px text-69 hover:text-primary transition-colors">
+          تسجيل الدخول
+        </a>
+        <span class="text-d9">•</span>
+        <a href="register.html" class="font-medium text-15px text-69 hover:text-primary transition-colors">
+          إنشاء حساب
+        </a>
+        <span class="text-d9">•</span>
+        <a href="index.html#features" class="font-medium text-15px text-69 hover:text-primary transition-colors">
+          المميزات
+        </a>
+        <span class="text-d9">•</span>
+        <a href="#" class="font-medium text-15px text-69 hover:text-primary transition-colors">
+          الدعم
+        </a>
+      </div>
+    </div>
+
+    <!-- Left Section: Illustration (RTL) -->
+    <div class="relative max-h-screen w-full p-6 max-lg:hidden order-1 lg:order-2">
+      <div class="relative h-full w-full rounded-24px bg-gradient-to-br from-primary/10 to-primary/5 center_flex">
+        <img
+          src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/404/error-6.png"
+          alt="404 illustration"
+          class="h-auto max-h-[500px] w-auto max-w-full object-contain"
+        />
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6">
+    <div class="container">
+      <div class="text-center">
+        <p class="text-69 text-14px">&copy; 2026 Notice. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
