@@ -13,6 +13,7 @@ export default defineConfig({
         'confirm-password': new URL('./confirm-password.html', import.meta.url).pathname,
         '404': new URL('./404.html', import.meta.url).pathname,
         test: new URL('./test.html', import.meta.url).pathname,
+        // 'privacy-policy': new URL('./privacy-policy.html', import.meta.url).pathname,
       }
     }
   }
